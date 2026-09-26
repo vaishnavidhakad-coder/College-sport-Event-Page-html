@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Sports Fest 2026</title>
+  <style>
+    /* ====================================================
+       COLLEGE SPORTS FEST 2026 - STYLESHEET
+       Simple, clean, and beginner-friendly CSS
+       ==================================================== */
+
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+
+    /* Navigation Bar */
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #0284c7);
+      color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #e0f2fe;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #f59e0b;
+      text-decoration: underline;
+    }
+
+    /* Hero / Home Section */
+    .hero {
+      background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(30, 58, 138, 0.82)),
+                  radial-gradient(circle at 20% 30%, #2563eb 0%, #0f172a 70%);
+      color: #ffffff;
+      text-align: center;
+      padding: 90px 20px 80px;
+    }
+
+    .hero-container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .hero-tag {
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #f59e0b;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #e2e8f0;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background-color: #ea580c;
+      color: #ffffff;
+      border-color: #ea580c;
+    }
+
+    .btn-primary:hover {
+      background-color: #c2410c;
+      border-color: #c2410c;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .btn-secondary:hover {
+      background-color: #ffffff;
+      color: #1e3a8a;
+    }
+
+    /* Common Section Styles */
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      color: #0f172a;
+      margin-bottom: 8px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-header h2::after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 4px;
+      background-color: #0284c7;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-header p {
+      color: #64748b;
+      font-size: 1rem;
+    }
+
+    /* 2. Event Details Cards */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .detail-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-top: 4px solid #0284c7;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      transition: transform 0.2s ease;
+    }
+
+    .detail-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .detail-card .icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .detail-card h3 {
+      font-size: 1.15rem;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .detail-card p {
+      color: #475569;
+      font-size: 0.95rem;
+    }
+
+    /* 3. Sports Activities */
+    .sports-section {
+      background-color: #f1f5f9;
+    }
+
+    .sports-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .sport-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sport-card:hover {
+      border-color: #0284c7;
+    }
+
+    .sport-icon {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .sport-title {
+      font-size: 1.25rem;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .sport-meta {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+
+    .sport-desc {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-bottom: 16px;
+    }
+
+    /* 4. Event Schedule Table */
+    .table-responsive {
+      overflow-x: auto;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .schedule-table th {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .schedule-table td {
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+
+    .schedule-table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    .schedule-table tr:hover {
+      background-color: #eff6ff;
+    }
+
+    .badge-sport {
+      font-weight: 600;
+      color: #0369a1;
+    }
+
+    /* 5. Rules & Regulations */
+    .rules-section {
+      background-color: #ffffff;
+    }
+
+    .rules-list {
+      max-width: 820px;
+      margin: 0 auto;
+      list-style: none;
+      counter-reset: rules-counter;
+      display: grid;
+      gap: 14px;
+    }
+
+    .rules-list li {
+      counter-increment: rules-counter;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 5px solid #10b981;
+      border-radius: 6px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 1rem;
+      color: #1e293b;
+    }
+
+    .rules-list li::before {
+      content: counter(rules-counter);
+      background-color: #10b981;
+      color: #ffffff;
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.85rem;
+    }
+
+    /* 6. Registration Section */
+    .registration-section {
+      background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+    }
+
+    .registration-box {
+      max-width: 720px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 36px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .registration-box h3 {
+      font-size: 1.5rem;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+
+    .registration-box p {
+      color: #475569;
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .form-group input,
+    .form-group select {
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    /* 7. Contact Section */
+    .contact-section {
+      background-color: #ffffff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-card .contact-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.15rem;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: #475569;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .contact-card a:hover {
+      color: #0284c7;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .nav-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        justify-content: center;
+        gap: 12px;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-group.full-width {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <span>🏆</span> College Sports Fest 2026
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#details">Event Details</a></li>
+          <li><a href="#sports">Sports Activities</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-tag">Annual Inter-Department Championship</div>
+      <h1>College Sports Fest 2026</h1>
+      <p>
+        Welcome to the biggest athletic celebration of the year! Bring your passion,
+        stamina, and team spirit to compete for glory, championship trophies, and
+        lifelong memories.
+      </p>
+      <div class="hero-buttons">
+        <a href="#register" class="btn btn-primary">Register Now</a>
+        <a href="#schedule" class="btn btn-secondary">View Schedule</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Event Details -->
+  <section id="details">
+    <div class="container">
+      <div class="section-header">
+        <h2>Event Details</h2>
+        <p>Key information regarding dates, timings, and location</p>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="icon">📅</div>
+          <h3>Date</h3>
+          <p><strong>October 16 – 18, 2026</strong><br>(Friday to Sunday, 3 Days)</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="icon">⏰</div>
+          <h3>Time</h3>
+          <p><strong>8:00 AM – 6:00 PM</strong><br>Reporting time: 7:30 AM daily</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="icon">📍</div>
+          <h3>Venue</h3>
+          <p><strong>Main College Sports Complex</strong><br>Athletic Ground & Indoor Sports Arena</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="icon">👥</div>
+          <h3>Organized By</h3>
+          <p><strong>College Sports Committee</strong><br>Department of Physical Education & Sports</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Sports Activities -->
+  <section id="sports" class="sports-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sports Activities</h2>
+        <p>Participate in team games and individual track events</p>
+      </div>
+
+      <div class="sports-grid">
+        <!-- Basketball -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">🏀</div>
+            <h3 class="sport-title">Basketball</h3>
+            <div class="sport-meta">Team of 5 + 3 Subs · Outdoor Court A</div>
+            <p class="sport-desc">Fast-paced 4-quarter knockout matches for both Men's and Women's divisions.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+
+        <!-- Cricket -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">🏏</div>
+            <h3 class="sport-title">Cricket</h3>
+            <div class="sport-meta">11 Players a side · Main Oval Ground</div>
+            <p class="sport-desc">10-over limited-overs tournament played with standard leather balls under umpire supervision.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+
+        <!-- Volleyball -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">🏐</div>
+            <h3 class="sport-title">Volleyball</h3>
+            <div class="sport-meta">6 Players a side · Sand Court B</div>
+            <p class="sport-desc">Best-of-three sets format with standard rally scoring for inter-branch teams.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+
+        <!-- Football -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">⚽</div>
+            <h3 class="sport-title">Football</h3>
+            <div class="sport-meta">7-a-side format · North Turf Stadium</div>
+            <p class="sport-desc">High-energy football matches with 25-minute halves and penalty shootouts if tied.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+
+        <!-- Badminton -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">🏸</div>
+            <h3 class="sport-title">Badminton</h3>
+            <div class="sport-meta">Singles & Doubles · Indoor Wooden Court</div>
+            <p class="sport-desc">Fast singles and doubles tournaments with synthetic shuttlecocks and BWF scoring.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+
+        <!-- Kho-Kho -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">🏃</div>
+            <h3 class="sport-title">Kho-Kho</h3>
+            <div class="sport-meta">9 Players + 3 Chasers · Traditional Clay Arena</div>
+            <p class="sport-desc">Traditional Indian tag sport testing extreme agility, stamina, and chase coordination.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+
+        <!-- Athletics -->
+        <div class="sport-card">
+          <div>
+            <div class="sport-icon">👟</div>
+            <h3 class="sport-title">Athletics</h3>
+            <div class="sport-meta">100m, 400m, Relay, Long Jump · Synthetic Track</div>
+            <p class="sport-desc">Individual sprint, middle-distance races, 4x100m relays, and field events.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-align: center;">Enroll Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Event Schedule -->
+  <section id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <h2>Event Schedule</h2>
+        <p>Timetable of upcoming matches and track events</p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Sport</th>
+              <th>Match / Event</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00 AM – 09:30 AM</td>
+              <td><span class="badge-sport">Athletics</span></td>
+              <td>Opening 100m & 400m Track Heats (Men & Women)</td>
+              <td>Main Synthetic Track</td>
+            </tr>
+            <tr>
+              <td>09:30 AM – 11:30 AM</td>
+              <td><span class="badge-sport">Cricket</span></td>
+              <td>Quarter Final 1: CS Warriors vs Mech Titans</td>
+              <td>Main Cricket Oval</td>
+            </tr>
+            <tr>
+              <td>11:30 AM – 01:00 PM</td>
+              <td><span class="badge-sport">Basketball</span></td>
+              <td>Knockout Round: Civil Strikers vs EC Hawks</td>
+              <td>Basketball Court 1</td>
+            </tr>
+            <tr>
+              <td>01:00 PM – 02:00 PM</td>
+              <td colspan="3" style="text-align: center; font-style: italic; background-color: #f1f5f9; color: #64748b;">
+                🍴 Official Lunch & Rehydration Break
+              </td>
+            </tr>
+            <tr>
+              <td>02:00 PM – 03:30 PM</td>
+              <td><span class="badge-sport">Volleyball</span></td>
+              <td>Semi-Final: IT Spikers vs Bio Defenders</td>
+              <td>Sand Volleyball Court</td>
+            </tr>
+            <tr>
+              <td>03:30 PM – 05:00 PM</td>
+              <td><span class="badge-sport">Football</span></td>
+              <td>Quarter Final 2: MBA Rovers vs Civil Strikers</td>
+              <td>North Football Turf</td>
+            </tr>
+            <tr>
+              <td>05:00 PM – 06:00 PM</td>
+              <td><span class="badge-sport">Kho-Kho</span></td>
+              <td>Exhibition Match & League Round 1</td>
+              <td>Kho-Kho Clay Ground</td>
+            </tr>
+            <tr>
+              <td>06:00 PM – 07:30 PM</td>
+              <td><span class="badge-sport">Badminton</span></td>
+              <td>Singles Final & Prize Distribution (Day 1)</td>
+              <td>Indoor Sports Arena</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Rules & Regulations -->
+  <section id="rules" class="rules-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Rules & Regulations</h2>
+        <p>Please adhere to all guidelines to ensure fair and safe competition</p>
+      </div>
+
+      <ol class="rules-list">
+        <li>
+          <span>Participants must carry their college ID card.</span>
+        </li>
+        <li>
+          <span>Participants must report on time.</span>
+        </li>
+        <li>
+          <span>Follow the instructions of the sports coordinator.</span>
+        </li>
+        <li>
+          <span>Maintain discipline and sportsmanship.</span>
+        </li>
+        <li>
+          <span>Proper sports equipment must be used.</span>
+        </li>
+        <li>
+          <span>Respect opponents, teammates, and officials.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 6. Registration Section -->
+  <section id="register" class="registration-section">
+    <div class="container">
+      <div class="registration-box">
+        <h3>Join College Sports Fest 2026</h3>
+        <p>
+          Don't miss the opportunity to represent your branch! Register yourself or your team
+          before October 10, 2026. Entry is completely free for all enrolled college students.
+        </p>
+
+        <!-- Registration Form -->
+        <form onsubmit="event.preventDefault(); alert('Registration submitted successfully! Please check your college email for your entry pass.'); this.reset();">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="studentId">College Roll / ID No.</label>
+              <input type="text" id="studentId" placeholder="e.g. 24BCS1024" required>
+            </div>
+
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select id="department" required>
+                <option value="">Select your department</option>
+                <option value="cs">Computer Science & Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="ec">Electronics & Communication</option>
+                <option value="mech">Mechanical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="mgmt">Business & Management</option>
+                <option value="other">Other Faculty / Sciences</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="sportSelect">Select Sport</label>
+              <select id="sportSelect" required>
+                <option value="">Choose a sport</option>
+                <option value="basketball">Basketball</option>
+                <option value="cricket">Cricket</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="football">Football</option>
+                <option value="badminton">Badminton</option>
+                <option value="khokho">Kho-Kho</option>
+                <option value="athletics">Athletics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="studentEmail">College Email</label>
+              <input type="email" id="studentEmail" placeholder="student@college.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label for="studentPhone">Contact Number</label>
+              <input type="tel" id="studentPhone" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 260px;">
+            Register Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Section</h2>
+        <p>Have questions? Reach out to the sports organizing committee</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">🏢</div>
+          <h3>Sports Committee</h3>
+          <p>Office of Physical Education</p>
+          <p>Gymkhana Building, Room 102</p>
+          <p style="color: #64748b; font-size: 0.85rem; margin-top: 6px;">Hours: 9:00 AM – 5:00 PM</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>College Email</h3>
+          <p><a href="mailto:sports@college.edu">sports@college.edu</a></p>
+          <p><a href="mailto:fest2026@college.edu">fest2026@college.edu</a></p>
+          <p style="color: #64748b; font-size: 0.85rem; margin-top: 6px;">Queries answered within 24 hrs</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Contact Number</h3>
+          <p><a href="tel:+919876543210">+91 (0) 98765 43210</a></p>
+          <p><a href="tel:+911234567890">+91 (0) 12345 67890</a></p>
+          <p style="color: #64748b; font-size: 0.85rem; margin-top: 6px;">Coordinator: Prof. R. Sharma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>College Sports Fest 2026</strong> &copy; All Rights Reserved.</p>
+      <p>Designed for College Annual Sports Meet &bull; Developed with HTML & CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
